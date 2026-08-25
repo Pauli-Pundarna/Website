@@ -1,1 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELF Voice Changer - Releases</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="site-shell">
+        <header class="nav">
+            <a class="brand" href="#top" aria-label="ELF home">
+                <span class="logo-mark">ELF</span>
+                <span>ELF Voice Changer</span>
+            </a>
+            <nav class="nav-links" aria-label="Primary navigation">
+                <a href="#downloads">Downloads</a>
+                <a href="#install">Install</a>
+                <a href="#release-notes">Release notes</a>
+                <a href="#support">Support</a>
+                <a class="button" href="#downloads">Get ELF</a>
+            </nav>
+        </header>
 
+        <main id="top">
+            <section class="hero" aria-labelledby="hero-title">
+                <div>
+                    <span class="eyebrow">Latest release: ELF 1.0.0 beta</span>
+                    <h1 id="hero-title">Install ELF and start shaping your voice.</h1>
+                    <p class="hero-copy">A launch-ready wireframe for the ELF voice changer release site, focused on downloads, setup steps, version notes, and fast troubleshooting for new users.</p>
+                    <div class="hero-actions">
+                        <a class="button green" href="#downloads">Download latest</a>
+                        <a class="button secondary" href="#install">View install guide</a>
+                    </div>
+                    <div class="release-strip" aria-label="Release details">
+                        <span><strong>Version</strong> 1.0.0 beta</span>
+                        <span><strong>Updated</strong> Aug 25, 2026</span>
+                        <span><strong>Platforms</strong> macOS, Windows, Linux</span>
+                    </div>
+                </div>
+
+                <div class="visual-panel" aria-label="ELF application preview">
+                    <div class="window-bar" aria-hidden="true">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <div class="app-mock">
+                        <div class="meter-row">
+                            <div>
+                                <strong>Live Voice</strong><br>
+                                <small>Studio mic - ELF output active</small>
+                            </div>
+                            <span class="tag">42 ms</span>
+                        </div>
+                        <div class="waveform" aria-hidden="true">
+                            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                        <div class="preset-grid">
+                            <div class="preset"><b>Clean</b><small>Natural correction</small></div>
+                            <div class="preset"><b>Deep</b><small>Broadcast tone</small></div>
+                            <div class="preset"><b>Robot</b><small>Hard tuned</small></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="downloads" aria-labelledby="downloads-title">
+                <div class="section-heading">
+                    <h2 id="downloads-title">Downloads</h2>
+                    <p>Select a platform package. The buttons currently simulate the release download flow and can later point to real installer files.</p>
+                </div>
+
+                <div class="download-grid">
+                    <article class="card download-card">
+                        <span class="platform-icon">mac</span>
+                        <h3>macOS</h3>
+                        <p>Universal installer for Apple silicon and Intel Macs. Includes the ELF virtual audio device setup.</p>
+                        <div class="download-meta">
+                            <span class="tag">DMG</span>
+                            <span class="tag">128 MB</span>
+                            <span class="tag">macOS 13+</span>
+                        </div>
+                        <button class="button green" data-download="ELF-1.0.0-beta-macOS.dmg">Download for macOS</button>
+                    </article>
+
+                    <article class="card download-card">
+                        <span class="platform-icon">win</span>
+                        <h3>Windows</h3>
+                        <p>Signed setup package with driver prompts and first-run audio routing checks.</p>
+                        <div class="download-meta">
+                            <span class="tag">EXE</span>
+                            <span class="tag">142 MB</span>
+                            <span class="tag">Windows 10+</span>
+                        </div>
+                        <button class="button green" data-download="ELF-1.0.0-beta-Windows.exe">Download for Windows</button>
+                    </article>
+
+                    <article class="card download-card">
+                        <span class="platform-icon">lin</span>
+                        <h3>Linux</h3>
+                        <p>AppImage build for testers, with manual audio bridge configuration notes.</p>
+                        <div class="download-meta">
+                            <span class="tag">AppImage</span>
+                            <span class="tag">119 MB</span>
+                            <span class="tag">Beta</span>
+                        </div>
+                        <button class="button green" data-download="ELF-1.0.0-beta-Linux.AppImage">Download for Linux</button>
+                    </article>
+                </div>
+            </section>
+
+            <section id="install" class="install-band" aria-labelledby="install-title">
+                <div class="section-heading">
+                    <h2 id="install-title">Installation Flow</h2>
+                    <p>A compact setup path users can follow immediately after downloading ELF.</p>
+                </div>
+
+                <div class="steps">
+                    <article class="card step">
+                        <span class="step-number">1</span>
+                        <h3>Download</h3>
+                        <p>Choose the package for your operating system and save it locally.</p>
+                    </article>
+                    <article class="card step">
+                        <span class="step-number">2</span>
+                        <h3>Install audio device</h3>
+                        <p>Approve the virtual audio driver or bridge when the installer asks.</p>
+                    </article>
+                    <article class="card step">
+                        <span class="step-number">3</span>
+                        <h3>Select microphone</h3>
+                        <p>Open ELF, choose your input mic, and confirm that the live meter moves.</p>
+                    </article>
+                    <article class="card step">
+                        <span class="step-number">4</span>
+                        <h3>Route output</h3>
+                        <p>Select ELF as the microphone in Discord, games, streaming tools, or calls.</p>
+                    </article>
+                </div>
+
+                <div class="command-box">
+                    <code id="install-command">open ELF-1.0.0-beta-macOS.dmg</code>
+                    <button class="button secondary" id="copy-command" type="button">Copy command</button>
+                </div>
+            </section>
+
+            <section id="release-notes" aria-labelledby="release-title">
+                <div class="section-heading">
+                    <h2 id="release-title">Release Notes</h2>
+                    <p>Placeholder release history for the launch page. Replace each item with final changelog entries when builds are published.</p>
+                </div>
+
+                <div class="release-layout">
+                    <article class="card release-panel">
+                        <h3>ELF 1.0.0 beta</h3>
+                        <p>First public installer candidate with real-time presets, device routing, and onboarding checks.</p>
+                        <ul class="release-list">
+                            <li>
+                                <span class="release-badge">New</span>
+                                <div><strong>Preset launcher</strong><br><span>Clean, Deep, Robot, Whisper, and Radio voice profiles.</span></div>
+                                <span>1.0.0</span>
+                            </li>
+                            <li>
+                                <span class="release-badge">Fix</span>
+                                <div><strong>Audio setup checks</strong><br><span>Detects missing virtual device permissions before first use.</span></div>
+                                <span>1.0.0</span>
+                            </li>
+                            <li>
+                                <span class="release-badge">Beta</span>
+                                <div><strong>Linux package</strong><br><span>Early AppImage build for compatibility testing.</span></div>
+                                <span>1.0.0</span>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <aside class="card status-panel" aria-label="Build status">
+                        <h3>Build Status</h3>
+                        <div class="status-row"><span>macOS</span><span class="warn">Unreleased</span></div>
+                        <div class="status-row"><span>Windows</span><span class="warn">Unreleased</span></div>
+                        <div class="status-row"><span>Linux</span><span class="warn">Unreleased</span></div>
+                        <div class="status-row"><span>Release checksum</span><span class="ok">Published</span></div>
+                    </aside>
+                </div>
+            </section>
+
+            <section id="support" class="install-band" aria-labelledby="support-title">
+                <div class="section-heading">
+                    <h2 id="support-title">Setup Support</h2>
+                    <p>Fast answers for installation blockers users are likely to hit during a first release.</p>
+                </div>
+
+                <div class="support-grid">
+                    <article class="card support-item">
+                        <h3>ELF does not appear as a microphone</h3>
+                        <p>Restart the target app after installation, then choose ELF Output from its microphone list.</p>
+                    </article>
+                    <article class="card support-item">
+                        <h3>No sound in the live meter</h3>
+                        <p>Confirm the input microphone in ELF and allow microphone access in system privacy settings.</p>
+                    </article>
+                    <article class="card support-item">
+                        <h3>Driver permission blocked</h3>
+                        <p>Open system security settings, approve the ELF audio component, and restart the installer.</p>
+                    </article>
+                    <article class="card support-item">
+                        <h3>Need an older build</h3>
+                        <p>Archived releases can be linked here once multiple installer versions are available.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <span>ELF Voice Changer release site wireframe</span>
+            <span>Privacy / Checksums / Contact / GitHub</span>
+        </footer>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+</body>
+</html>
